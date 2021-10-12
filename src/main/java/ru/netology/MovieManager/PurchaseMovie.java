@@ -14,6 +14,14 @@ public class PurchaseMovie {
     private Movie6 Movie6;
     private Movie7 Movie7;
 
+    public PurchaseMovie(int id, int movieId, String movieName, int productPrice, int quantity) {
+        this.id = id;
+        this.movieId = movieId;
+        this.movieName = movieName;
+        this.productPrice = productPrice;
+        Quantity = quantity;
+    }
+
     public int getId() {
         return id;
     }
@@ -53,81 +61,4 @@ public class PurchaseMovie {
     public void setQuantity(int quantity) {
         Quantity = quantity;
     }
-
-    public ru.netology.MovieManager.Movie1 getMovie1() {
-        return Movie1;
-    }
-
-    public void setMovie1(ru.netology.MovieManager.Movie1 movie1) {
-        Movie1 = movie1;
-    }
-
-    public ru.netology.MovieManager.Movie2 getMovie2() {
-        return Movie2;
-    }
-
-    public void setMovie2(ru.netology.MovieManager.Movie2 movie2) {
-        Movie2 = movie2;
-    }
-
-    public ru.netology.MovieManager.Movie3 getMovie3() {
-        return Movie3;
-    }
-
-    public void setMovie3(ru.netology.MovieManager.Movie3 movie3) {
-        Movie3 = movie3;
-    }
-
-    public ru.netology.MovieManager.Movie4 getMovie4() {
-        return Movie4;
-    }
-
-    public void setMovie4(ru.netology.MovieManager.Movie4 movie4) {
-        Movie4 = movie4;
-    }
-
-    public ru.netology.MovieManager.Movie5 getMovie5() {
-        return Movie5;
-    }
-
-    public void setMovie5(ru.netology.MovieManager.Movie5 movie5) {
-        Movie5 = movie5;
-    }
-
-    public ru.netology.MovieManager.Movie6 getMovie6() {
-        return Movie6;
-    }
-
-    public void setMovie6(ru.netology.MovieManager.Movie6 movie6) {
-        Movie6 = movie6;
-    }
-
-    public ru.netology.MovieManager.Movie7 getMovie7() {
-        return Movie7;
-    }
-
-    public void setMovie7(ru.netology.MovieManager.Movie7 movie7) {
-        Movie7 = movie7;
-    }
-
-    public PurchaseMovie(int id, int movieId, String movieName, int productPrice, int quantity, ru.netology.MovieManager.Movie1 movie1, ru.netology.MovieManager.Movie2 movie2, ru.netology.MovieManager.Movie3 movie3, ru.netology.MovieManager.Movie4 movie4, ru.netology.MovieManager.Movie5 movie5, ru.netology.MovieManager.Movie6 movie6, ru.netology.MovieManager.Movie7 movie7) {
-        this.id = id;
-        this.movieId = movieId;
-        this.movieName = movieName;
-        this.productPrice = productPrice;
-        Quantity = quantity;
-        Movie1 = movie1;
-        Movie2 = movie2;
-        Movie3 = movie3;
-        Movie4 = movie4;
-        Movie5 = movie5;
-        Movie6 = movie6;
-        Movie7 = movie7;
-
-
-    }
 }
-
-
-
-

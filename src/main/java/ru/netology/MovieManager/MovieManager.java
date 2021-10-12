@@ -6,9 +6,16 @@ public class MovieManager {
     private PurchaseMovie[] movies = new PurchaseMovie[0]; //создаем пустой массив
     private int moviesList = 10; // желаемый рр массива
 
-    public PurchaseMovie[] findMovies() {
-        return movies; // вернуть все фильмы
+    public MovieManager() {
     }
+
+    public MovieManager(int moviesList) {
+        this.moviesList = moviesList;
+    }
+
+    /*public PurchaseMovie[] findMovies() {
+        return movies; // вернуть все фильмы
+    }*/
 
     public void add(PurchaseMovie movie) {
         int length = movies.length + 1;
