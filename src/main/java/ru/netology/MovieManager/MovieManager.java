@@ -1,15 +1,17 @@
 package ru.netology.MovieManager;
 
 public class MovieManager {
-     //Добавить фильм в ленту (класс фильма напишите сами по аналогии с лекции).
+    //Добавить фильм в ленту (класс фильма напишите сами по аналогии с лекции).
     //Выдать последние 10 добавленных фильмов* (фильмы выдаются в обратном порядке, т.е. первым в массиве результатов будет тот, который был добавлен последним).
     private PurchaseMovie[] movies = new PurchaseMovie[0]; //создаем пустой массив
     private int moviesList = 10; // желаемый рр массива
 
     public MovieManager(int moviesList) {
         this.moviesList = moviesList;
-         }
+    }
 
+    public MovieManager() {
+    }
 
     public void add(PurchaseMovie movie) {
         int length = movies.length + 1;
